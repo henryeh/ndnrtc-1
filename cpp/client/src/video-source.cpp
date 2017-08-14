@@ -16,7 +16,7 @@ VideoSource::VideoSource(io_service& io_service,
 	const std::string& sourcePath, 
 	const boost::shared_ptr<RawFrame>& frame):
 io_(io_service), frame_(frame), isRunning_(false), framesSourced_(0),
-nRewinds_(0), , userDataSize_(0), userData_(nullptr)
+nRewinds_(0), userDataSize_(0), userData_(nullptr)
 {
 	assert(frame.get());
 
